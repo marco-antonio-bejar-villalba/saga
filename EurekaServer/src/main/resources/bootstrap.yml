@@ -1,0 +1,4 @@
+server:  port: 8070
+spring:
+  application:
+    name: Eureka-Servereureka:  instance:    hostname: localhost  client:    register-with-eureka: false    fetch-registry: false    service-url:      defaultXone: http://${eureka.instance.hostname}:${server.port}/eureka/  server:    wait-time-in-ms-when-sync-empty: 5

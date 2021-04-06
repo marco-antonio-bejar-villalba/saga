@@ -1,8 +1,10 @@
 package org.marco.preferences.crud.repository;
 
-import org.marco.preferences.crud.entities.Client;
-import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+import org.marco.preferences.crud.entities.CustomerProperties;
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface PreferencesRepository extends ReactiveCrudRepository<Client, Integer> {
+@Repository
+public interface PreferencesRepository extends ReactiveMongoRepository<CustomerProperties, String> {
 
 }
