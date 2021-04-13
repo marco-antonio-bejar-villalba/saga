@@ -18,7 +18,7 @@ import lombok.ToString;
 @Document(collection = "CustomerProperties")
 public class CustomerProperties {
 	@Id
-	String id;
+	String clientId;
 	String name;
 	String lastName;
 	Date creationDate;
